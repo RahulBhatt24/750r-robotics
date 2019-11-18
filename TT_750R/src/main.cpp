@@ -78,9 +78,9 @@ void usercontrol( void ) {
     robot.drive(controller1.Axis2.position());
 
     if(controller1.Axis1.position()>10)
-      robot.strafe(-1);
-    else if (controller1.Axis1.position()<-10)
       robot.strafe(1);
+    else if (controller1.Axis1.position()<-10)
+      robot.strafe(-1);
     else
       robot.strafe(0);
       
